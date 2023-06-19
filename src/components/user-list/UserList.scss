@@ -1,0 +1,50 @@
+.user-list {
+  width: 50%;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
+
+  &__wrapper {
+    position: absolute;
+    overflow-y: scroll;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    top: 5rem;
+    bottom: 3rem;
+    width: 50%;
+    @media (max-width: 576px) {
+      width: 100%;
+      right: 0;
+      box-shadow: unset;
+    }
+  }
+
+  &__total-container,
+  &__error-message-container {
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    // position: absolute;
+    // bottom: 1rem;
+    // right: 50%;
+    text-align: center;
+    min-width: 100%;
+  }
+  &__error-message {
+    color: #dc3545;
+    right: unset;
+    position: absolute;
+    bottom: 1rem;
+  }
+  &__error-message-container {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__show-more {
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background: #28a745;
+    position: absolute;
+    bottom: 1rem;
+  }
+}

@@ -1,0 +1,37 @@
+.skeleton {
+  position: absolute;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  top: 5rem;
+  bottom: 3rem;
+  width: 50%;
+  list-style-type: none;
+  padding-top: 1rem;
+  @media (max-width: 576px){
+    width: 100%;
+    box-shadow: unset;
+  }
+
+  &__profile-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  &__image {
+    height: 7rem;
+    width: 7rem;
+    background-color: lightgray;
+    border-radius: 50%;
+  }
+
+  &__username {
+    height: 1rem;
+    width: 8rem;
+    background-color: lightgray;
+    margin-left: 1rem;
+  }
+
+  &__separator {
+    opacity: 0.5;
+  }
+}

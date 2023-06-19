@@ -1,0 +1,68 @@
+.user-item {
+  &--blocked {
+    background-color: lightgray;
+  }
+  list-style-type: none;
+  cursor: pointer;
+  &--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--profile-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__profile-image {
+    width: 4.25rem;
+    height: 4.25rem;
+    border-radius: 50%;
+  }
+
+  &__item {
+    margin: 0.4rem;
+  }
+
+  &__following-indicator {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 1rem;
+    background-color: #007bff;
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  &__blocked-indicator {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 1rem;
+    background-color: #dc3545;
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  &__chevron {
+    font-size: large;
+  }
+
+  &__chevron,
+  &__reputation {
+    font-weight: 700;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: right;
+    margin-right: 1rem;
+  }
+
+  &__action {
+    margin: 0.5rem;
+    border-radius: 1rem;
+    height: 1.5rem;
+  }
+
+  &__separator {
+    margin: 0 !important;
+  }
+}
